@@ -1,0 +1,74 @@
+---
+title: "My R Notebook"
+output: html_notebook
+---
+
+```{r}
+getwd()
+
+setwd("C:\\Users\\rober\\training")
+
+getwd()
+```
+
+```{r}
+# install.packages("openxlsx")
+```
+
+```{r}
+cont = read.csv("liste-contaminants.csv", header = TRUE , sep = ",")
+head(cont)
+```
+
+
+```{r}
+df = read.csv("dataset-entier.csv", header = TRUE , sep = ",")
+```
+
+
+```{r}
+head(df)
+```
+
+```{r}
+dim(df)
+colnames(df)
+```
+```{r}
+```
+
+
+```{r}
+summary(df)
+```
+```{r}
+sapply(df, class)
+```
+```{r}
+str(df)
+```
+```{r}
+cart = read.csv("dataset-carte.csv", header = TRUE , sep = ",")
+
+head(cart)
+```
+
+```{r}
+sapply(cart, class)
+```
+```{r}
+cart$num_departement <- as.numeric(cart$num_departement)
+
+```
+```{r}
+write.csv(cart, "dataset-carte.csv")
+```
+```{r}
+cart = read.csv("dataset-carte.csv", header = TRUE , sep = ",")
+
+```
+```{r}
+sapply(cart, class)
+```
+
+
