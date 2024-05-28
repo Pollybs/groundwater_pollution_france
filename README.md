@@ -7,6 +7,8 @@ Project Goal : To analyze the data in Python and R, create a database in MySQL, 
 
 ![dash1](https://github.com/Pollybs/groundwater_pollution_france/blob/main/Dashboard%201.png)
 
+![dash2](https://github.com/Pollybs/groundwater_pollution_france/blob/main/contaminants.png)
+
 Source des données : Le Monde. Analyse de 226 contaminants - pesticides, nitrates, solvants et autres substances chimiques - 24 700 stations de surveillance, huit années de mesures, pour dresser un état des lieux de la contamination des eaux souterraines en France.  Cette étude a permis de comprendre quelles substances polluent les réserves hydrologiques et de cartographier l'état chimique des eaux souterraines.
 
 Data Source: Le Monde. Analysis of 226 contaminants - including pesticides, nitrates, solvents and other chemicals - 24,700 monitoring stations, eight years of measurements, to draw up an inventory of groundwater contamination in France.  The data has helped to understand which substances are polluting hydrological reserves and to map the chemical status of groundwater.
