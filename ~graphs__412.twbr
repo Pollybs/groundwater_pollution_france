@@ -18,7 +18,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='GroundwaterPollutioninFrance' path='/workbooks' revision='1.2' />
+  <repository-location id='GroundwaterPollutioninFrance' path='/workbooks' revision='1.4' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -1005,7 +1005,11 @@
       <column caption='Dates Depassement' datatype='string' name='[dates_depassement]' role='dimension' type='nominal' />
       <column caption='Dates Potabilite' datatype='string' name='[dates_potabilite]' role='dimension' type='nominal' />
       <column caption='Dates Quantif' datatype='string' name='[dates_quantif]' role='dimension' type='nominal' />
-      <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal' />
+      <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;FHG&quot;' value='métaux, métalloïdes et autres ions minéraux(FHG)' />
+        </aliases>
+      </column>
       <column caption='Mesures Depassement' datatype='string' name='[mesures_depassement]' role='dimension' type='nominal' />
       <column caption='Mesures Potabilite' datatype='string' name='[mesures_potabilite]' role='dimension' type='nominal' />
       <column caption='Mesures Quantif' datatype='string' name='[mesures_quantif]' role='dimension' type='nominal' />
@@ -1327,7 +1331,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -1594,7 +1598,11 @@
           </datasources>
           <datasource-dependencies datasource='federated.0xo0cet0p5a0kg188l0nu1geuoq8'>
             <column caption='Count Params Depassement' datatype='integer' name='[count_params_depassement]' role='measure' type='quantitative' />
-            <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal' />
+            <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;FHG&quot;' value='métaux, métalloïdes et autres ions minéraux(FHG)' />
+              </aliases>
+            </column>
             <column-instance column='[famille]' derivation='None' name='[none:famille:nk]' pivot='key' type='nominal' />
             <column-instance column='[count_params_depassement]' derivation='Sum' name='[pcto:sum:count_params_depassement:qk]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' type='PctTotal' />
@@ -1792,13 +1800,100 @@
       </layout-options>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='dataset-carte' name='federated.0fbx0ou0tv5xze18c04z00nawbdv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0fbx0ou0tv5xze18c04z00nawbdv'>
+            <column caption='Count Params Potabilite' datatype='integer' name='[count_params_potabilite]' role='measure' type='quantitative' />
+            <column-instance column='[x]' derivation='None' name='[none:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[count_params_potabilite]' derivation='Sum' name='[sum:count_params_potabilite:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[x]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>7</max>
+          </filter>
+          <slices>
+            <column>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]</column>
+          </slices>
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]' field-type='quantitative' max='1829668.7297371216' min='-855172.85896617803' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]' field-type='quantitative' max='6731284.8177675428' min='5056619.754498668' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' min='1' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6dfe6</color>
+                <color>#becddc</color>
+                <color>#a6bdd2</color>
+                <color>#90adc7</color>
+                <color>#7c9dbd</color>
+                <color>#698fb3</color>
+                <color>#5781a8</color>
+                <color>#47749e</color>
+                <color>#386794</color>
+                <color>#2b5c8a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
           <style-rule element='table'>
             <format attr='show-null-value-warning' value='false' />
             <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' value='SUM(Count Params Potabilite)'>
+              <formatted-text>
+                <run>SUM(Count Params Potabilite)</run>
+              </formatted-text>
+            </format>
+            <format attr='size' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' value='SUM Params Potabilite'>
+              <formatted-text>
+                <run>SUM Params Potabilite</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
           </style-rule>
         </style>
         <panes>
@@ -1806,24 +1901,15 @@
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Circle' />
-            <style>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-line-first' value='true' />
-                <format attr='mark-labels-line-last' value='true' />
-                <format attr='mark-labels-range-min' value='true' />
-                <format attr='mark-labels-range-max' value='true' />
-                <format attr='mark-labels-mode' value='all' />
-                <format attr='mark-labels-range-scope' value='pane' />
-                <format attr='mark-labels-range-field' value='' />
-                <format attr='mark-labels-show' value='false' />
-              </style-rule>
-            </style>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' />
+              <size column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' />
+            </encodings>
           </pane>
         </panes>
-        <rows />
-        <cols />
+        <rows>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]</rows>
+        <cols>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]</cols>
       </table>
       <simple-id uuid='{6A804834-D24F-4E09-9401-637115BE5A8C}' />
     </worksheet>
@@ -1913,8 +1999,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='61' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
@@ -2135,8 +2221,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='950' minheight='950' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='62' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='61' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
@@ -2288,13 +2374,13 @@
       <active id='-1' />
       <simple-id uuid='{9545744C-56E7-4680-8F4C-938D395B9208}' />
     </window>
-    <window class='dashboard' name='contaminants'>
+    <window class='dashboard' maximized='true' name='contaminants'>
       <viewpoints>
         <viewpoint name='contaminants1'>
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='40' />
       <simple-id uuid='{2793069F-B90A-443C-B7DC-2BD7254E1736}' />
     </window>
     <window class='worksheet' name='contaminants1'>
@@ -2343,9 +2429,15 @@
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_potabilite:qk]' type='size' />
+          </strip>
+        </edge>
       </cards>
       <viewpoint>
-        <zoom type='entire-view' />
+        <default-map-tool-selection tool='1' />
       </viewpoint>
       <simple-id uuid='{E879DAA9-2F99-429C-AD29-8008E85628DD}' />
     </window>
@@ -2372,7 +2464,7 @@
       </cards>
       <simple-id uuid='{A2E5840D-6824-45F9-9386-5C63A206EA85}' />
     </window>
-    <window class='dashboard' maximized='true' name='Story 1'>
+    <window class='dashboard' name='Story 1'>
       <viewpoints />
       <active id='5' />
       <simple-id uuid='{41021B9F-1BB1-4D0F-B2D0-37E6DD3150EB}' />
