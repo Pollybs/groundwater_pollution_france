@@ -13,4 +13,13 @@ Source des données : Le Monde. Analyse de 226 contaminants - pesticides, nitrat
 
 Data Source: Le Monde. Analysis of 226 contaminants - including pesticides, nitrates, solvents and other chemicals - 24,700 monitoring stations, eight years of measurements, to draw up an inventory of groundwater contamination in France.  The data has helped to understand which substances are polluting hydrological reserves and to map the chemical status of groundwater.
 
+Correspondance des codes de notre typologie d’usages :
+
+les pesticides et leurs métabolites issus des activités agricoles : 0
+les substances chimiques industrielles (utilisation et production) : 1
+les hydrocarbures aromatiques polycycliques (HAP) : 2
+les médicaments : 3
+les nitrates, nitrites et autres engrais azotés : 4
+les métaux, métalloïdes et autres ions minéraux : 5
+
 <a href="https://www.lemonde.fr/les-decodeurs/article/2024/05/15/comment-le-monde-a-cartographie-la-pollution-des-eaux-souterraines_6233362_4355770.html"> Article Le Monde </a>
