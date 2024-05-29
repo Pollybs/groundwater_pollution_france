@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.24.0103.1332                               -->
+<workbook original-version='18.1' source-build='2023.1.8 (20231.24.0103.1332)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='GroundwaterPollutioninFrance' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='dataset-carte' inline='true' name='federated.0fbx0ou0tv5xze18c04z00nawbdv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset-carte' name='textscan.183ntyn0ke0y8n123h37600184eq'>
+            <connection class='textscan' directory='C:/Users/rober/training/groundwater_pollution_france' filename='dataset-carte.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.183ntyn0ke0y8n123h37600184eq' name='dataset-carte.csv' table='[dataset-carte#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='bss_id' ordinal='1' />
+            <column datatype='string' name='params_depassement' ordinal='2' />
+            <column datatype='string' name='max_mesure_per_param_depassement' ordinal='3' />
+            <column datatype='string' name='nb_depassement_per_param' ordinal='4' />
+            <column datatype='string' name='max_mesure_per_param_depassement_date' ordinal='5' />
+            <column datatype='string' name='params_quantif' ordinal='6' />
+            <column datatype='string' name='nb_quantif_per_param' ordinal='7' />
+            <column datatype='string' name='famille' ordinal='8' />
+            <column datatype='real' name='x' ordinal='9' />
+            <column datatype='real' name='y' ordinal='10' />
+            <column datatype='string' name='nom_commune' ordinal='11' />
+            <column datatype='integer' name='num_departement' ordinal='12' />
+            <column datatype='integer' name='alerte_nitrates' ordinal='13' />
+            <column datatype='integer' name='count_params_potabilite' ordinal='14' />
+            <column datatype='string' name='codes_masse_eau_edl' ordinal='15' />
+            <column datatype='integer' name='count_params_depassement' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.183ntyn0ke0y8n123h37600184eq' name='dataset-carte.csv' table='[dataset-carte#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='bss_id' ordinal='1' />
+            <column datatype='string' name='params_depassement' ordinal='2' />
+            <column datatype='string' name='max_mesure_per_param_depassement' ordinal='3' />
+            <column datatype='string' name='nb_depassement_per_param' ordinal='4' />
+            <column datatype='string' name='max_mesure_per_param_depassement_date' ordinal='5' />
+            <column datatype='string' name='params_quantif' ordinal='6' />
+            <column datatype='string' name='nb_quantif_per_param' ordinal='7' />
+            <column datatype='string' name='famille' ordinal='8' />
+            <column datatype='real' name='x' ordinal='9' />
+            <column datatype='real' name='y' ordinal='10' />
+            <column datatype='string' name='nom_commune' ordinal='11' />
+            <column datatype='integer' name='num_departement' ordinal='12' />
+            <column datatype='integer' name='alerte_nitrates' ordinal='13' />
+            <column datatype='integer' name='count_params_potabilite' ordinal='14' />
+            <column datatype='string' name='codes_masse_eau_edl' ordinal='15' />
+            <column datatype='integer' name='count_params_depassement' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bss_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bss_id]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>bss_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_depassement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[params_depassement]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>params_depassement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_mesure_per_param_depassement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[max_mesure_per_param_depassement]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>max_mesure_per_param_depassement</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_depassement_per_param</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nb_depassement_per_param]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>nb_depassement_per_param</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_mesure_per_param_depassement_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[max_mesure_per_param_depassement_date]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>max_mesure_per_param_depassement_date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_quantif</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[params_quantif]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>params_quantif</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_quantif_per_param</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nb_quantif_per_param]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>nb_quantif_per_param</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>famille</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[famille]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>famille</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nom_commune</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nom_commune]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>nom_commune</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_departement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_departement]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>num_departement</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alerte_nitrates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alerte_nitrates]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>alerte_nitrates</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_params_potabilite</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_params_potabilite]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>count_params_potabilite</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codes_masse_eau_edl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[codes_masse_eau_edl]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>codes_masse_eau_edl</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_params_depassement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_params_depassement]</local-name>
+            <parent-name>[dataset-carte.csv]</parent-name>
+            <remote-alias>count_params_depassement</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='dataset-carte.csv' datatype='table' name='[__tableau_internal_object_id__].[dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5]' role='measure' type='quantitative' />
+      <column caption='Alerte Nitrates' datatype='integer' name='[alerte_nitrates]' role='measure' type='quantitative' />
+      <column caption='Bss Id' datatype='string' name='[bss_id]' role='dimension' type='nominal' />
+      <column caption='Codes Masse Eau Edl' datatype='string' name='[codes_masse_eau_edl]' role='dimension' type='nominal' />
+      <column caption='Count Params Depassement' datatype='integer' name='[count_params_depassement]' role='measure' type='quantitative' />
+      <column caption='Count Params Potabilite' datatype='integer' name='[count_params_potabilite]' role='measure' type='quantitative' />
+      <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal' />
+      <column caption='Max Mesure Per Param Depassement' datatype='string' name='[max_mesure_per_param_depassement]' role='dimension' type='nominal' />
+      <column caption='Max Mesure Per Param Depassement Date' datatype='string' name='[max_mesure_per_param_depassement_date]' role='dimension' type='nominal' />
+      <column caption='Nb Depassement Per Param' datatype='string' name='[nb_depassement_per_param]' role='dimension' type='nominal' />
+      <column caption='Nb Quantif Per Param' datatype='string' name='[nb_quantif_per_param]' role='dimension' type='nominal' />
+      <column caption='Nom Commune' datatype='string' name='[nom_commune]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Num Departement' datatype='integer' default-format='*00000' name='[num_departement]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Params Depassement' datatype='string' name='[params_depassement]' role='dimension' type='nominal' />
+      <column caption='Params Quantif' datatype='string' name='[params_quantif]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[x]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/rober/training/groundwater_pollution_france/dataset-carte.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24695</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bss_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bss_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bss_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24695</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_depassement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[params_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_depassement</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>963</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_mesure_per_param_depassement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[max_mesure_per_param_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_mesure_per_param_depassement</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2609</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_depassement_per_param</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nb_depassement_per_param]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_depassement_per_param</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1011</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_mesure_per_param_depassement_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[max_mesure_per_param_depassement_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_mesure_per_param_depassement_date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>841</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_quantif</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[params_quantif]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_quantif</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4379</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_quantif_per_param</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nb_quantif_per_param]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_quantif_per_param</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5197</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>famille</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[famille]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>famille</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>x</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>x</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7049</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>y</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6576</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nom_commune</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nom_commune]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nom_commune</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7206</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_departement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_departement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_departement</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alerte_nitrates</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[alerte_nitrates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alerte_nitrates</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count_params_potabilite</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count_params_potabilite]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count_params_potabilite</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codes_masse_eau_edl</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[codes_masse_eau_edl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>codes_masse_eau_edl</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>901</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count_params_depassement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count_params_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count_params_depassement</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dataset-carte.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dataset-carte.csv' id='dataset-carte.csv_36A55EDB62EC46D9B0A3F4B848AFF1E5'>
+            <properties context=''>
+              <relation connection='textscan.183ntyn0ke0y8n123h37600184eq' name='dataset-carte.csv' table='[dataset-carte#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='bss_id' ordinal='1' />
+                  <column datatype='string' name='params_depassement' ordinal='2' />
+                  <column datatype='string' name='max_mesure_per_param_depassement' ordinal='3' />
+                  <column datatype='string' name='nb_depassement_per_param' ordinal='4' />
+                  <column datatype='string' name='max_mesure_per_param_depassement_date' ordinal='5' />
+                  <column datatype='string' name='params_quantif' ordinal='6' />
+                  <column datatype='string' name='nb_quantif_per_param' ordinal='7' />
+                  <column datatype='string' name='famille' ordinal='8' />
+                  <column datatype='real' name='x' ordinal='9' />
+                  <column datatype='real' name='y' ordinal='10' />
+                  <column datatype='string' name='nom_commune' ordinal='11' />
+                  <column datatype='integer' name='num_departement' ordinal='12' />
+                  <column datatype='integer' name='alerte_nitrates' ordinal='13' />
+                  <column datatype='integer' name='count_params_potabilite' ordinal='14' />
+                  <column datatype='string' name='codes_masse_eau_edl' ordinal='15' />
+                  <column datatype='integer' name='count_params_depassement' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='dataset-entier' inline='true' name='federated.0xo0cet0p5a0kg188l0nu1geuoq8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset-entier' name='textscan.141etnf1jdyy2a13tmu7g0rhqnjm'>
+            <connection class='textscan' directory='C:/Users/rober/training/groundwater_pollution_france' filename='dataset-entier.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.141etnf1jdyy2a13tmu7g0rhqnjm' name='dataset-entier.csv' table='[dataset-entier#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='bss_id' ordinal='0' />
+            <column datatype='boolean' name='au_moins_un_depassement' ordinal='1' />
+            <column datatype='boolean' name='au_moins_un_20_pourcent_depassement' ordinal='2' />
+            <column datatype='string' name='params_recherches' ordinal='3' />
+            <column datatype='integer' name='params_depassement' ordinal='4' />
+            <column datatype='string' name='mesures_depassement' ordinal='5' />
+            <column datatype='string' name='dates_depassement' ordinal='6' />
+            <column datatype='integer' name='count_params_depassement' ordinal='7' />
+            <column datatype='real' name='pourcentage_depassement' ordinal='8' />
+            <column datatype='real' name='total_mesures' ordinal='9' />
+            <column datatype='string' name='params_quantif' ordinal='10' />
+            <column datatype='string' name='mesures_quantif' ordinal='11' />
+            <column datatype='string' name='dates_quantif' ordinal='12' />
+            <column datatype='integer' name='count_params_quantif' ordinal='13' />
+            <column datatype='string' name='nb_quantif_per_param' ordinal='14' />
+            <column datatype='integer' name='params_potabilite' ordinal='15' />
+            <column datatype='string' name='mesures_potabilite' ordinal='16' />
+            <column datatype='string' name='dates_potabilite' ordinal='17' />
+            <column datatype='integer' name='count_params_potabilite' ordinal='18' />
+            <column datatype='integer' name='alerte_nitrates' ordinal='19' />
+            <column datatype='string' name='famille' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.141etnf1jdyy2a13tmu7g0rhqnjm' name='dataset-entier.csv' table='[dataset-entier#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='bss_id' ordinal='0' />
+            <column datatype='boolean' name='au_moins_un_depassement' ordinal='1' />
+            <column datatype='boolean' name='au_moins_un_20_pourcent_depassement' ordinal='2' />
+            <column datatype='string' name='params_recherches' ordinal='3' />
+            <column datatype='integer' name='params_depassement' ordinal='4' />
+            <column datatype='string' name='mesures_depassement' ordinal='5' />
+            <column datatype='string' name='dates_depassement' ordinal='6' />
+            <column datatype='integer' name='count_params_depassement' ordinal='7' />
+            <column datatype='real' name='pourcentage_depassement' ordinal='8' />
+            <column datatype='real' name='total_mesures' ordinal='9' />
+            <column datatype='string' name='params_quantif' ordinal='10' />
+            <column datatype='string' name='mesures_quantif' ordinal='11' />
+            <column datatype='string' name='dates_quantif' ordinal='12' />
+            <column datatype='integer' name='count_params_quantif' ordinal='13' />
+            <column datatype='string' name='nb_quantif_per_param' ordinal='14' />
+            <column datatype='integer' name='params_potabilite' ordinal='15' />
+            <column datatype='string' name='mesures_potabilite' ordinal='16' />
+            <column datatype='string' name='dates_potabilite' ordinal='17' />
+            <column datatype='integer' name='count_params_potabilite' ordinal='18' />
+            <column datatype='integer' name='alerte_nitrates' ordinal='19' />
+            <column datatype='string' name='famille' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bss_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bss_id]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>bss_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>au_moins_un_depassement</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[au_moins_un_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>au_moins_un_depassement</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>au_moins_un_20_pourcent_depassement</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[au_moins_un_20_pourcent_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>au_moins_un_20_pourcent_depassement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_recherches</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[params_recherches]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>params_recherches</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_depassement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[params_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>params_depassement</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mesures_depassement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mesures_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>mesures_depassement</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates_depassement</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dates_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>dates_depassement</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_params_depassement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_params_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>count_params_depassement</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pourcentage_depassement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pourcentage_depassement]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>pourcentage_depassement</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_mesures</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_mesures]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>total_mesures</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_quantif</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[params_quantif]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>params_quantif</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mesures_quantif</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mesures_quantif]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>mesures_quantif</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates_quantif</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dates_quantif]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>dates_quantif</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_params_quantif</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_params_quantif]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>count_params_quantif</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nb_quantif_per_param</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[nb_quantif_per_param]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>nb_quantif_per_param</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>params_potabilite</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[params_potabilite]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>params_potabilite</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mesures_potabilite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mesures_potabilite]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>mesures_potabilite</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dates_potabilite</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dates_potabilite]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>dates_potabilite</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count_params_potabilite</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count_params_potabilite]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>count_params_potabilite</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alerte_nitrates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[alerte_nitrates]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>alerte_nitrates</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>famille</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[famille]</local-name>
+            <parent-name>[dataset-entier.csv]</parent-name>
+            <remote-alias>famille</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='dataset-entier.csv' datatype='table' name='[__tableau_internal_object_id__].[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]' role='measure' type='quantitative' />
+      <column caption='Alerte Nitrates' datatype='integer' name='[alerte_nitrates]' role='measure' type='quantitative' />
+      <column caption='Au Moins Un 20 Pourcent Depassement' datatype='boolean' name='[au_moins_un_20_pourcent_depassement]' role='dimension' type='nominal' />
+      <column caption='Au Moins Un Depassement' datatype='boolean' name='[au_moins_un_depassement]' role='dimension' type='nominal' />
+      <column caption='Bss Id' datatype='string' name='[bss_id]' role='dimension' type='nominal' />
+      <column caption='Count Params Depassement' datatype='integer' name='[count_params_depassement]' role='measure' type='quantitative' />
+      <column caption='Count Params Potabilite' datatype='integer' name='[count_params_potabilite]' role='measure' type='quantitative' />
+      <column caption='Count Params Quantif' datatype='integer' name='[count_params_quantif]' role='measure' type='quantitative' />
+      <column caption='Dates Depassement' datatype='string' name='[dates_depassement]' role='dimension' type='nominal' />
+      <column caption='Dates Potabilite' datatype='string' name='[dates_potabilite]' role='dimension' type='nominal' />
+      <column caption='Dates Quantif' datatype='string' name='[dates_quantif]' role='dimension' type='nominal' />
+      <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal' />
+      <column caption='Mesures Depassement' datatype='string' name='[mesures_depassement]' role='dimension' type='nominal' />
+      <column caption='Mesures Potabilite' datatype='string' name='[mesures_potabilite]' role='dimension' type='nominal' />
+      <column caption='Mesures Quantif' datatype='string' name='[mesures_quantif]' role='dimension' type='nominal' />
+      <column caption='Nb Quantif Per Param' datatype='string' name='[nb_quantif_per_param]' role='dimension' type='nominal' />
+      <column caption='Params Depassement' datatype='integer' name='[params_depassement]' role='measure' type='quantitative' />
+      <column caption='Params Potabilite' datatype='integer' name='[params_potabilite]' role='measure' type='quantitative' />
+      <column caption='Params Quantif' datatype='string' name='[params_quantif]' role='dimension' type='nominal' />
+      <column caption='Params Recherches' datatype='string' name='[params_recherches]' role='dimension' type='nominal' />
+      <column caption='Pourcentage Depassement' datatype='real' name='[pourcentage_depassement]' role='measure' type='quantitative' />
+      <column caption='Total Mesures' datatype='real' name='[total_mesures]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_depassement]' derivation='None' name='[none:count_params_depassement:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_potabilite]' derivation='None' name='[none:count_params_potabilite:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[famille]' derivation='None' name='[none:famille:nk]' pivot='key' type='nominal' />
+      <column-instance column='[total_mesures]' derivation='None' name='[none:total_mesures:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_depassement]' derivation='Sum' name='[pcto:sum:count_params_depassement:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[total_mesures]' derivation='Sum' name='[pcto:sum:total_mesures:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:famille:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[alerte_nitrates]' derivation='Sum' name='[sum:alerte_nitrates:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_depassement]' derivation='Sum' name='[sum:count_params_depassement:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_potabilite]' derivation='Sum' name='[sum:count_params_potabilite:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[count_params_quantif]' derivation='Sum' name='[sum:count_params_quantif:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[params_depassement]' derivation='Sum' name='[sum:params_depassement:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[params_potabilite]' derivation='Sum' name='[sum:params_potabilite:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[pourcentage_depassement]' derivation='Sum' name='[sum:pourcentage_depassement:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_mesures]' derivation='Sum' name='[sum:total_mesures:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/rober/training/groundwater_pollution_france/dataset-entier.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>bss_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bss_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bss_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42791</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>au_moins_un_depassement</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[au_moins_un_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>au_moins_un_depassement</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>au_moins_un_20_pourcent_depassement</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[au_moins_un_20_pourcent_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>au_moins_un_20_pourcent_depassement</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_recherches</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[params_recherches]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_recherches</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2377</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_depassement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[params_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_depassement</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>149</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mesures_depassement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mesures_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mesures_depassement</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6548</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dates_depassement</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dates_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dates_depassement</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6548</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count_params_depassement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count_params_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count_params_depassement</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pourcentage_depassement</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pourcentage_depassement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pourcentage_depassement</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>320</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_mesures</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_mesures]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_mesures</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_quantif</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[params_quantif]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_quantif</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3684</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mesures_quantif</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mesures_quantif]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mesures_quantif</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24869</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dates_quantif</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dates_quantif]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dates_quantif</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>55534</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count_params_quantif</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count_params_quantif]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count_params_quantif</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nb_quantif_per_param</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[nb_quantif_per_param]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nb_quantif_per_param</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5088</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>params_potabilite</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[params_potabilite]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>params_potabilite</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>234</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mesures_potabilite</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mesures_potabilite]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mesures_potabilite</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>923</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dates_potabilite</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dates_potabilite]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dates_potabilite</remote-alias>
+              <ordinal>17</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>923</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count_params_potabilite</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count_params_potabilite]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count_params_potabilite</remote-alias>
+              <ordinal>18</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alerte_nitrates</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[alerte_nitrates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alerte_nitrates</remote-alias>
+              <ordinal>19</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>famille</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[famille]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>famille</remote-alias>
+              <ordinal>20</ordinal>
+              <family>dataset-entier.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[pcto:sum:total_mesures:qk:1]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:count_params_potabilite:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_potabilite:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:alerte_nitrates:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:params_potabilite:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[__tableau_internal_object_id__].[cnt:dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:pourcentage_depassement:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:total_mesures:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:total_mesures:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_quantif:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:count_params_depassement:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[pcto:sum:count_params_depassement:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_depassement:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:params_depassement:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:famille:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;agriculture&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;médicaments&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;industrie&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;hydrocarbures&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;nitrates et nitrites&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;FHG&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dataset-entier.csv' id='dataset-entier.csv_47B84CB9C27B44AC86A17AB3E0ECCDBB'>
+            <properties context=''>
+              <relation connection='textscan.141etnf1jdyy2a13tmu7g0rhqnjm' name='dataset-entier.csv' table='[dataset-entier#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='bss_id' ordinal='0' />
+                  <column datatype='boolean' name='au_moins_un_depassement' ordinal='1' />
+                  <column datatype='boolean' name='au_moins_un_20_pourcent_depassement' ordinal='2' />
+                  <column datatype='string' name='params_recherches' ordinal='3' />
+                  <column datatype='integer' name='params_depassement' ordinal='4' />
+                  <column datatype='string' name='mesures_depassement' ordinal='5' />
+                  <column datatype='string' name='dates_depassement' ordinal='6' />
+                  <column datatype='integer' name='count_params_depassement' ordinal='7' />
+                  <column datatype='real' name='pourcentage_depassement' ordinal='8' />
+                  <column datatype='real' name='total_mesures' ordinal='9' />
+                  <column datatype='string' name='params_quantif' ordinal='10' />
+                  <column datatype='string' name='mesures_quantif' ordinal='11' />
+                  <column datatype='string' name='dates_quantif' ordinal='12' />
+                  <column datatype='integer' name='count_params_quantif' ordinal='13' />
+                  <column datatype='string' name='nb_quantif_per_param' ordinal='14' />
+                  <column datatype='integer' name='params_potabilite' ordinal='15' />
+                  <column datatype='string' name='mesures_potabilite' ordinal='16' />
+                  <column datatype='string' name='dates_potabilite' ordinal='17' />
+                  <column datatype='integer' name='count_params_potabilite' ordinal='18' />
+                  <column datatype='integer' name='alerte_nitrates' ordinal='19' />
+                  <column datatype='string' name='famille' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5F1BA87E-2F24-4571-AAE3-E8C56F22D781}' />
+    </worksheet>
+    <worksheet name='alerte Nitrates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='14'>Alerte Nitrates / Nitrates alert</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Nombre de fois où  le “seuil d’alerte” a été atteint ou dépassé entre 2016-2023</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#ffffff' fontsize='8'>Number of times the ‘alert threshold’ has been reached or exceeded between 2016-2023</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset-carte' name='federated.0fbx0ou0tv5xze18c04z00nawbdv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0fbx0ou0tv5xze18c04z00nawbdv'>
+            <column caption='Alerte Nitrates' datatype='integer' name='[alerte_nitrates]' role='measure' type='quantitative' />
+            <column-instance column='[x]' derivation='None' name='[none:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[alerte_nitrates]' derivation='Sum' name='[sum:alerte_nitrates:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[x]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>219</max>
+          </filter>
+          <slices>
+            <column>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]' field-type='quantitative' max='1147460.8898445943' min='-609786.51951548294' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]' field-type='quantitative' max='6633619.2843974046' min='5222000.2997403769' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' min='1' palette='red_gold_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' field-type='quantitative' max-size='1' min-size='0.01' type='rangesize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' value='SUM(Alerte Nitrates)'>
+              <formatted-text>
+                <run>SUM(Alerte Nitrates)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' />
+              <size column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]</rows>
+        <cols>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]</cols>
+      </table>
+      <simple-id uuid='{9B5FB419-61A1-483B-A761-E9128F1DA6C5}' />
+    </worksheet>
+    <worksheet name='contaminants1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Nature des contaminants des eaux souterraines en France</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Nbre total de mesures depassant le seuil ( 2016 - 2023)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Nature of groundwater contaminants in France - Total number of measurements exceeding the threshold ( 2016 - 2023)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset-entier' name='federated.0xo0cet0p5a0kg188l0nu1geuoq8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xo0cet0p5a0kg188l0nu1geuoq8'>
+            <column caption='Count Params Depassement' datatype='integer' name='[count_params_depassement]' role='measure' type='quantitative' />
+            <column caption='Famille' datatype='string' name='[famille]' role='dimension' type='nominal' />
+            <column-instance column='[famille]' derivation='None' name='[none:famille:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count_params_depassement]' derivation='Sum' name='[pcto:sum:count_params_depassement:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[count_params_depassement]' derivation='Sum' name='[sum:count_params_depassement:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_mesures]' derivation='Sum' name='[sum:total_mesures:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Mesures' datatype='real' name='[total_mesures]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_depassement:qk]' />
+              <text column='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:famille:nk]' />
+              <text column='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[pcto:sum:count_params_depassement:qk]' />
+              <text column='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_depassement:qk]' />
+              <color column='[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:famille:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:famille:nk]</field>
+                  <field>[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:total_mesures:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;hydrocarbures&quot;</value>
+                <value>1036.0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[none:famille:nk]</field>
+                  <field>[federated.0xo0cet0p5a0kg188l0nu1geuoq8].[sum:count_params_depassement:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;industrie&quot;</value>
+                <value>612</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{34081557-8F2E-40B5-B363-ABFDA1EF8769}' />
+    </worksheet>
+    <worksheet name='count parametres depassement'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='12'>Nombre de contaminants pour lesquels la valeur seuil est atteinte ou dépassée </run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>2016-2023</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Number of pollutants for which the threshold value has been reached or exceeded</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset-carte' name='federated.0fbx0ou0tv5xze18c04z00nawbdv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0fbx0ou0tv5xze18c04z00nawbdv'>
+            <column caption='Count Params Depassement' datatype='integer' name='[count_params_depassement]' role='measure' type='quantitative' />
+            <column-instance column='[x]' derivation='None' name='[none:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='None' name='[none:y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[count_params_depassement]' derivation='Sum' name='[sum:count_params_depassement:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[x]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>38</max>
+          </filter>
+          <slices>
+            <column>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]' field-type='quantitative' max='1128054.4566740284' min='-651554.54593250586' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]' field-type='quantitative' max='6631232.4127778029' min='5212703.517641413' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' min='1' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' />
+              <size column='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]</rows>
+        <cols>[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]</cols>
+      </table>
+      <simple-id uuid='{45743E15-79E2-449E-A11A-BB4BFB779160}' />
+    </worksheet>
+    <worksheet name='potabilite'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Nature des contaminants des eaux souterraines en France</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Nbre total de mesures ( 2016 - 2023)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='8'>Nature of groundwater contaminants in France - Total number of measurements ( 2016 - 2023)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6A804834-D24F-4E09-9401-637115BE5A8C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Maps'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#1b1b1b' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='72391' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='72391' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone fixed-size='108' h='13500' id='5' is-fixed='true' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Groundwater Pollution in France</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='58891' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='14500'>
+                <zone h='58891' id='17' name='count parametres depassement' w='49200' x='800' y='14500'>
+                  <layout-cache minheight='278' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='58891' id='13' name='alerte Nitrates' w='49200' x='50000' y='14500'>
+                  <layout-cache minheight='275' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='25609' id='22' is-centered='0' param='C:/Users/rober/Downloads/vecteezy_ai-generated-translucent-water-wave-in-light-blue-colors_35755785.png' type-v2='bitmap' w='49200' x='800' y='73391'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='25609' id='24' type-v2='text' w='49200' x='50000' y='73391'>
+            <formatted-text>
+              <run fontcolor='#ffffff'>Source des données : Le Monde. Analyse de 226 contaminants - pesticides, nitrates, solvants et autres substances chimiques - 24 700 stations de surveillance, 8 années de mesures. Cette étude a permis de comprendre quelles substances polluent les réserves hydrologiques et de cartographier l&apos;état chimique des eaux souterraines.</run>
+              <run>Æ&#10;&#10;</run>
+              <run fontcolor='#ffffff'>Data Source: Le Monde. Analysis of 226 contaminants - including pesticides, nitrates, solvents and other chemicals - 24,700 monitoring stations, 8 years of measurements. The data has helped to understand which substances are polluting hydrological reserves and to map the chemical status of groundwater.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='9625' id='19' name='count parametres depassement' pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' type-v2='color' w='14000' x='35400' y='24750' />
+        <zone h='9375' id='15' name='alerte Nitrates' pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' type-v2='color' w='14000' x='84700' y='24375' />
+        <zone h='35000' id='23' is-scaled='1' param='C:/Users/rober/Downloads/vecteezy_ai-generated-water-wave-splash-isolated-on-transparent_35733694.png' type-v2='bitmap' w='97500' x='-30500' y='80125' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Groundwater Pollution in France</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58891' id='17' is-fixed='true' name='count parametres depassement' w='49200' x='800' y='14500'>
+                  <layout-cache minheight='278' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9625' id='19' name='count parametres depassement' pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' type-v2='color' w='14000' x='35400' y='24750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58891' id='13' is-fixed='true' name='alerte Nitrates' w='49200' x='50000' y='14500'>
+                  <layout-cache minheight='275' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='15' name='alerte Nitrates' pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' type-v2='color' w='14000' x='84700' y='24375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='25609' id='22' is-centered='0' is-fixed='true' param='C:/Users/rober/Downloads/vecteezy_ai-generated-translucent-water-wave-in-light-blue-colors_35755785.png' type-v2='bitmap' w='49200' x='800' y='73391'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='25609' id='24' type-v2='text' w='49200' x='50000' y='73391'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff'>Source des données : Le Monde. Analyse de 226 contaminants - pesticides, nitrates, solvants et autres substances chimiques - 24 700 stations de surveillance, 8 années de mesures. Cette étude a permis de comprendre quelles substances polluent les réserves hydrologiques et de cartographier l&apos;état chimique des eaux souterraines.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#ffffff'>Data Source: Le Monde. Analysis of 226 contaminants - including pesticides, nitrates, solvents and other chemicals - 24,700 monitoring stations, 8 years of measurements. The data has helped to understand which substances are polluting hydrological reserves and to map the chemical status of groundwater.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35000' id='23' is-fixed='true' is-scaled='1' param='C:/Users/rober/Downloads/vecteezy_ai-generated-water-wave-splash-isolated-on-transparent_35733694.png' type-v2='bitmap' w='97500' x='-30500' y='80125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D04CF093-45D1-4B68-A13F-78B8C735B63E}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Contamination Eaux France</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone fixed-size='85' h='8817' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='830' />
+            <zone h='89523' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='9647'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Plan Contamination - Map Water Pollution' captured-sheet='Maps' id='1'>
+                    <currentDeltas>
+                      <worksheet name='count parametres depassement'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:y:qk]' field-type='quantitative' max='6661400.9820082029' min='5015128.9662109502' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[none:x:qk]' field-type='quantitative' max='1359938.3646137738' min='-705384.73884708981' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                  <story-point caption='Contaminants Polluters' captured-sheet='contaminants' id='2' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{9F9FB0AE-C153-419E-B822-64A8C6ABE08D}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='contaminants'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='42' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='36' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='72390' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='72390' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                  <zone fixed-size='108' h='13500' id='5' is-fixed='true' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                    <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
+                      <formatted-text>
+                        <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
+                        <run fontalignment='1'>Æ&#10;</run>
+                        <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Groundwater Pollution in France</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='58890' id='39' param='horz' type-v2='layout-flow' w='98400' x='800' y='14500'>
+                    <zone h='58890' id='40' name='contaminants1' w='98400' x='800' y='14500'>
+                      <layout-cache cell-count-w='1' non-cell-size-w='1' type-h='cell' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='25610' id='22' is-centered='0' param='C:/Users/rober/Downloads/vecteezy_ai-generated-translucent-water-wave-in-light-blue-colors_35755785.png' type-v2='bitmap' w='39297' x='800' y='73390'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='25610' id='24' type-v2='text' w='59103' x='40097' y='73390'>
+                <formatted-text>
+                  <run fontcolor='#ffffff'>Les principaux polluants dans les eaux souterraines françaises mesurés au-dessus du seuil recommandé sont les produits chimiques utilisés dans l&apos;agriculture (pesticides et autres).</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#ffffff'>The main pollutants in French groundwater measured above the advisory limit are chemical products used in agriculture (pesticides and others).</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='35000' id='23' is-scaled='1' param='C:/Users/rober/Downloads/vecteezy_ai-generated-water-wave-splash-isolated-on-transparent_35733694.png' type-v2='bitmap' w='97500' x='-30500' y='80125' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='13500' id='6' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Contamination des eaux souterraines en France</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Groundwater Pollution in France</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58890' id='40' is-fixed='true' name='contaminants1' w='98400' x='800' y='14500'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='25610' id='22' is-centered='0' is-fixed='true' param='C:/Users/rober/Downloads/vecteezy_ai-generated-translucent-water-wave-in-light-blue-colors_35755785.png' type-v2='bitmap' w='39297' x='800' y='73390'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='25610' id='24' type-v2='text' w='59103' x='40097' y='73390'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff'>Les principaux polluants dans les eaux souterraines françaises mesurés au-dessus du seuil recommandé sont les produits chimiques utilisés dans l&apos;agriculture (pesticides et autres).</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#ffffff'>The main pollutants in French groundwater measured above the advisory limit are chemical products used in agriculture (pesticides and others).</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35000' id='23' is-fixed='true' is-scaled='1' param='C:/Users/rober/Downloads/vecteezy_ai-generated-water-wave-splash-isolated-on-transparent_35733694.png' type-v2='bitmap' w='97500' x='-30500' y='80125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F73DC60E-705B-45C3-AB47-BA23620E9F69}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='count parametres depassement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:count_params_depassement:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{5A2D3857-C12A-4F77-BFE6-6192976A84A5}' />
+    </window>
+    <window class='worksheet' name='alerte Nitrates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.0fbx0ou0tv5xze18c04z00nawbdv].[sum:alerte_nitrates:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{571665BA-3BD5-4C8E-92BA-C47B8C067B06}' />
+    </window>
+    <window class='dashboard' name='Maps'>
+      <viewpoints>
+        <viewpoint name='alerte Nitrates'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='count parametres depassement'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9545744C-56E7-4680-8F4C-938D395B9208}' />
+    </window>
+    <window class='dashboard' name='contaminants'>
+      <viewpoints>
+        <viewpoint name='contaminants1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2793069F-B90A-443C-B7DC-2BD7254E1736}' />
+    </window>
+    <window class='worksheet' name='contaminants1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2DFB468-0E16-4AA5-9F38-AD1A21B7E6BB}' />
+    </window>
+    <window class='worksheet' name='potabilite'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E879DAA9-2F99-429C-AD29-8008E85628DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A2E5840D-6824-45F9-9386-5C63A206EA85}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{41021B9F-1BB1-4D0F-B2D0-37E6DD3150EB}' />
+    </window>
+  </windows>
+</workbook>
