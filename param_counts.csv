@@ -1,0 +1,171 @@
+,nom,count,usage_lm
+0,somme des pesticides,1455,pesticides et leurs métabolites
+1,desphenyl-chloridazon,1157,pesticides et leurs métabolites
+2,atrazine déséthyl,825,pesticides et leurs métabolites
+3,atrazine déisopropyl déséthyl,784,pesticides et leurs métabolites
+4,bentazone,243,pesticides et leurs métabolites
+5,glyphosate,229,pesticides et leurs métabolites
+6,methyl-desphenyl-chloridazon,228,pesticides et leurs métabolites
+7,métolachlore,191,pesticides et leurs métabolites
+8,atrazine,184,pesticides et leurs métabolites
+9,chlortoluron,124,pesticides et leurs métabolites
+10,métaldéhyde,119,pesticides et leurs métabolites
+11,propyzamide,102,pesticides et leurs métabolites
+12,métazachlore,96,pesticides et leurs métabolites
+13,oxadixyl,96,pesticides et leurs métabolites
+14,"2,6-dichlorobenzamide",93,pesticides et leurs métabolites
+15,dimethenamid,86,pesticides et leurs métabolites
+16,fluorure,85,"métaux, métalloïdes et autres ions minéraux"
+17,quinmerac,76,pesticides et leurs métabolites
+18,sodium,75,"métaux, métalloïdes et autres ions minéraux"
+19,thiafluamide,74,pesticides et leurs métabolites
+20,terbumeton désethyl,74,pesticides et leurs métabolites
+21,métolachlore ESA,71,pesticides et leurs métabolites
+22,atrazine déisopropyl,68,pesticides et leurs métabolites
+23,diméthachlore-OXA,63,pesticides et leurs métabolites
+24,métazachlore OXA,57,pesticides et leurs métabolites
+25,flufenacet-sulfonic acid (ESA),56,pesticides et leurs métabolites
+26,métazachlore ESA,47,pesticides et leurs métabolites
+27,aminotriazole,46,pesticides et leurs métabolites
+28,chlorothalonil-SA (R417888),45,pesticides et leurs métabolites
+29,sélénium,39,"métaux, métalloïdes et autres ions minéraux"
+30,prosulfocarbe,38,pesticides et leurs métabolites
+31,arsenic,38,"métaux, métalloïdes et autres ions minéraux"
+32,terbuthylazine désethyl,36,pesticides et leurs métabolites
+33,métolachlore OXA,33,pesticides et leurs métabolites
+34,tébuconazole,32,pesticides et leurs métabolites
+35,boscalid,32,pesticides et leurs métabolites
+36,ethidimuron,32,pesticides et leurs métabolites
+37,"2,4-D",30,pesticides et leurs métabolites
+38,desmethylnorflurazon,30,pesticides et leurs métabolites
+39,sulfate,30,"métaux, métalloïdes et autres ions minéraux"
+40,bromacil,29,pesticides et leurs métabolites
+41,isoproturon,28,pesticides et leurs métabolites
+42,diméthachlore,28,pesticides et leurs métabolites
+43,"N,N-Dimethylsulfamid (DMS)",25,pesticides et leurs métabolites
+44,lénacile,24,pesticides et leurs métabolites
+45,antimoine,23,"métaux, métalloïdes et autres ions minéraux"
+46,"benzo(g,h,i)pérylène",23,hydrocarbures aromatiques polycycliques 
+47,imidaclopride,22,pesticides et leurs métabolites
+48,chlorothalonil R471811,21,pesticides et leurs métabolites
+49,mésotrione,21,pesticides et leurs métabolites
+50,alachlore ESA,21,pesticides et leurs métabolites
+51,diuron,21,pesticides et leurs métabolites
+52,dinoterbe,20,pesticides et leurs métabolites
+53,"2,4-MCPA",20,pesticides et leurs métabolites
+54,simazine,19,pesticides et leurs métabolites
+55,nicosulfuron,18,pesticides et leurs métabolites
+56,métribuzine,18,pesticides et leurs métabolites
+57,triclopyr,17,pesticides et leurs métabolites
+58,diflufenicanil,17,pesticides et leurs métabolites
+59,dicamba,17,pesticides et leurs métabolites
+60,benzo(k)fluoranthène,17,hydrocarbures aromatiques polycycliques 
+61,norflurazone,15,pesticides et leurs métabolites
+62,chlordécone,15,pesticides et leurs métabolites
+63,terbuthylazine,15,pesticides et leurs métabolites
+64,fluroxypyr,14,pesticides et leurs métabolites
+65,bore,14,"métaux, métalloïdes et autres ions minéraux"
+66,piperonyl butoxyde,13,pesticides et leurs métabolites
+67,métobromuron,13,pesticides et leurs métabolites
+68,dieldrine,13,pesticides et leurs métabolites
+69,hexachlorocyclohexane bêta,12,pesticides et leurs métabolites
+70,nitrites,10,"nitrates, nitrites et engrais azotés"
+71,aluminium,10,"métaux, métalloïdes et autres ions minéraux"
+72,2-hydroxy atrazine,10,pesticides et leurs métabolites
+73,métamitrone,10,pesticides et leurs métabolites
+74,imazamox,10,pesticides et leurs métabolites
+75,chlorure de vinyle,10,substances chimiques industrielles (utilisation et/ou production)
+76,clomazone,10,pesticides et leurs métabolites
+77,fosetyl,9,pesticides et leurs métabolites
+78,diméthomorphe,9,pesticides et leurs métabolites
+79,ethofumésate,9,pesticides et leurs métabolites
+80,napropamide,9,pesticides et leurs métabolites
+81,sulcotrione,8,pesticides et leurs métabolites
+82,fluoranthène,8,hydrocarbures aromatiques polycycliques 
+83,cyproconazole,8,pesticides et leurs métabolites
+84,anthraquinone,8,hydrocarbures aromatiques polycycliques 
+85,propiconazole,8,pesticides et leurs métabolites
+86,azoxystrobine,7,pesticides et leurs métabolites
+87,ammonium,7,"nitrates, nitrites et engrais azotés"
+88,dichlorprop,7,pesticides et leurs métabolites
+89,carbendazime,7,pesticides et leurs métabolites
+90,baryum,7,"métaux, métalloïdes et autres ions minéraux"
+91,terbuthylazine hydroxy,7,pesticides et leurs métabolites
+92,atrazine 2-hydroxy-desethyl,7,pesticides et leurs métabolites
+93,"dichloroéthylène-1,2 cis",6,substances chimiques industrielles (utilisation et/ou production)
+94,déméton-S-méthyl,6,pesticides et leurs métabolites
+95,epoxiconazole,6,pesticides et leurs métabolites
+96,cyprodinil,5,pesticides et leurs métabolites
+97,o-xylène,5,substances chimiques industrielles (utilisation et/ou production)
+98,hexazinone,5,pesticides et leurs métabolites
+99,thiabendazole,5,pesticides et leurs métabolites
+100,métalaxyl,5,pesticides et leurs métabolites
+101,alachlore,5,pesticides et leurs métabolites
+102,naphtalène,5,hydrocarbures aromatiques polycycliques 
+103,diméthachlore CGA 369873,5,pesticides et leurs métabolites
+104,nickel,4,"métaux, métalloïdes et autres ions minéraux"
+105,aldrine,4,pesticides et leurs métabolites
+106,metsulfuron méthyle,4,pesticides et leurs métabolites
+107,somme tetrachloroéthylène et trichloroéthylène,4,substances chimiques industrielles (utilisation et/ou production)
+108,prochloraz,4,pesticides et leurs métabolites
+109,alachlore OXA,4,pesticides et leurs métabolites
+110,oxadiazon,4,pesticides et leurs métabolites
+111,asulame,4,pesticides et leurs métabolites
+112,aclonifène,4,pesticides et leurs métabolites
+113,chlorures,4,"métaux, métalloïdes et autres ions minéraux"
+114,chlormequat,4,pesticides et leurs métabolites
+115,dimethenamid-ESA,4,pesticides et leurs métabolites
+116,benzo(b)fluoranthène,4,hydrocarbures aromatiques polycycliques 
+117,cyromazine,3,pesticides et leurs métabolites
+118,dimethenamid-OXA,3,pesticides et leurs métabolites
+119,"dichlorobenzène-1,4",3,substances chimiques industrielles (utilisation et/ou production)
+120,tétrachloroéthylène,3,substances chimiques industrielles (utilisation et/ou production)
+121,"dichloroéthane-1,2",3,substances chimiques industrielles (utilisation et/ou production)
+122,"somme HAP 4 (benzo(b)fluoranthène, benzo(g,h,i)pérylène, benzo(k)fluoranthène, indéno(1,2,3-cd)pyrène)",3,hydrocarbures aromatiques polycycliques 
+123,"indéno(1,2,3-cd)pyrène",3,hydrocarbures aromatiques polycycliques 
+124,mesosulfuron-methyl,3,pesticides et leurs métabolites
+125,thifensulfuron méthyl,3,pesticides et leurs métabolites
+126,hexachlorocyclohexane gamma,3,pesticides et leurs métabolites
+127,m+p xylène,3,substances chimiques industrielles (utilisation et/ou production)
+128,thiamethoxam,3,pesticides et leurs métabolites
+129,tétrachlorure de carbone,3,substances chimiques industrielles (utilisation et/ou production)
+130,prosulfuron,3,pesticides et leurs métabolites
+131,trichloroéthylène,3,substances chimiques industrielles (utilisation et/ou production)
+132,acétochlore,3,pesticides et leurs métabolites
+133,bromates,3,"métaux, métalloïdes et autres ions minéraux"
+134,piclorame,2,pesticides et leurs métabolites
+135,flonicamid,2,pesticides et leurs métabolites
+136,"dichloropropane-1,2",2,pesticides et leurs métabolites
+137,cadmium,2,"métaux, métalloïdes et autres ions minéraux"
+138,chloridazone,2,pesticides et leurs métabolites
+139,metconazole,2,pesticides et leurs métabolites
+140,benzo(a)pyrène,2,hydrocarbures aromatiques polycycliques 
+141,flurtamone,2,pesticides et leurs métabolites
+142,iprodione,2,pesticides et leurs métabolites
+143,fosthiazate,2,pesticides et leurs métabolites
+144,terbutryne,2,pesticides et leurs métabolites
+145,métolachlore NOA 413173,2,pesticides et leurs métabolites
+146,somme heptachloroépoxyde (heptachlore époxyde exo cis + heptachlore époxyde endo trans,2,pesticides et leurs métabolites
+147,hexachlorobutadiène,2,substances chimiques industrielles (utilisation et/ou production)
+148,florasulam,1,pesticides et leurs métabolites
+149,foramsulfuron,1,pesticides et leurs métabolites
+150,heptachlore époxyde exo cis,1,pesticides et leurs métabolites
+151,trinexapac-ethyl,1,pesticides et leurs métabolites
+152,toluène,1,substances chimiques industrielles (utilisation et/ou production)
+153,styrène,1,substances chimiques industrielles (utilisation et/ou production)
+154,"dioxane-1,4",1,substances chimiques industrielles (utilisation et/ou production)
+155,cyanures totaux,1,substances chimiques industrielles (utilisation et/ou production)
+156,fénarimol,1,pesticides et leurs métabolites
+157,dichloroacétonitrile,1,substances chimiques industrielles (utilisation et/ou production)
+158,diquat,1,pesticides et leurs métabolites
+159,pirimicarbe,1,pesticides et leurs métabolites
+160,cymoxanil,1,pesticides et leurs métabolites
+161,pyriméthanil,1,pesticides et leurs métabolites
+162,oxydéméton-méthyl,1,pesticides et leurs métabolites
+163,fenpropidine,1,pesticides et leurs métabolites
+164,endosulfan alpha,1,pesticides et leurs métabolites
+165,heptachlore,1,pesticides et leurs métabolites
+166,molybdène,1,"métaux, métalloïdes et autres ions minéraux"
+167,heptachlore époxyde endo trans,1,pesticides et leurs métabolites
+168,fipronil,1,pesticides et leurs métabolites
+169,ethylbenzène,1,substances chimiques industrielles (utilisation et/ou production)
