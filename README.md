@@ -9,8 +9,6 @@ Project Goal : Data Analysis (Python and R), Data Visualisation using Tableau
 
 ![dash2](https://github.com/Pollybs/groundwater_pollution_france/blob/main/dashboards/Maps%202.png)
 
-![dash3](https://github.com/Pollybs/groundwater_pollution_france/blob/main/dashboards/contaminants%202.png)
-
 ![dash3](https://github.com/Pollybs/groundwater_pollution_france/blob/main/dashboards/contaminants.png)
 
 ![dash4](https://github.com/Pollybs/groundwater_pollution_france/blob/main/dashboards/contaminants%202.png)
